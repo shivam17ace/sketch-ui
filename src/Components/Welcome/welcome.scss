@@ -1,10 +1,69 @@
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+.container {
+    
+    .navbar {
+        height: 90px;
+        width: 100%;
+        box-shadow: 0 3px 12px RGB(22 22 22 / 5%);
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        opacity: 1;
+        z-index: 10;
+        display: flex;
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            margin-left: 35px;
+            margin-top: 10px;
+            width: 50px;
+            object-fit: cover;
+        }
+        
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            list-style: none;
+            color: gray;
+            cursor: pointer;
+            margin-left: auto;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .icon-shopping {
+            margin-right: 190px;
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+            cursor: pointer;
+            color: grey;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .cart_count {
+            width: 20px;
+            height: 20px;
+            font-size: 1.1rem;
+            font-weight: 400;
+            box-sizing: border-box;
+            color: #fff;
+            border-radius: 50%;
+            background-color: #e7b000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    }
 }
