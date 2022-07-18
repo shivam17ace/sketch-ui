@@ -1,9 +1,10 @@
 .container {
-    
+    background-color: RGB(253 242 248);
     .navbar {
         height: 90px;
         width: 100%;
         box-shadow: 0 3px 12px RGB(22 22 22 / 5%);
+        background-color: RGB(240 253 250);
         position: -webkit-sticky;
         position: sticky;
         top: 0;
@@ -15,13 +16,13 @@
         .logo {
             display: flex;
             align-items: center;
-        }
 
-        img {
-            margin-left: 35px;
-            margin-top: 10px;
-            width: 50px;
-            object-fit: cover;
+            img {
+                margin-left: 35px;
+                margin-top: 10px;
+                width: 50px;
+                object-fit: cover;
+            }
         }
         
         ul {
@@ -39,7 +40,7 @@
         }
 
         .icon-shopping {
-            margin-right: 190px;
+            margin-right: 20px;
             display: flex;
             align-items: center;
             margin-left: 50px;
@@ -64,6 +65,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-          }
+        }
+
+        .avatar_logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 30px;
+                object-fit: cover;
+                margin-right: 90px;
+                filter: drop-shadow(0 20px 13px RGB(0 0 0 / 0.03)) drop-shadow(0 8px 5px RGB(0 0 0 / 0.08));
+            }
+        }
     }
 }

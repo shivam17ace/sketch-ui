@@ -1,7 +1,9 @@
 import React from "react";
 import "../Welcome/welcome.scss"
-import Logo from "../Images/logo.png";
+import Logo from "../../Images/logo.png";
+import Avatar from "../../Images/avatar.png";
 import {MdShoppingBasket} from "react-icons/md";
+import {motion} from "framer-motion";
 function Welcome () {
     return(
     <div className="container">
@@ -20,6 +22,9 @@ function Welcome () {
                 <MdShoppingBasket />
                 <div className="cart_count">1</div>
             </span>
+            <div className="avatar_logo">
+                <motion.img whileTap={{scale:0.7}} src={Avatar} alt="avatar" />
+            </div>
         </div>
     </div>
     )
