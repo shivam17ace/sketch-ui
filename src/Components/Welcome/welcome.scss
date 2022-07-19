@@ -1,5 +1,4 @@
 .container {
-    background-color: RGB(253 242 248);
     .navbar {
         height: 90px;
         width: 100%;
@@ -72,10 +71,104 @@
             align-items: center;
 
             img {
+                cursor: pointer;
                 width: 30px;
                 object-fit: cover;
                 margin-right: 90px;
                 filter: drop-shadow(0 20px 13px RGB(0 0 0 / 0.03)) drop-shadow(0 8px 5px RGB(0 0 0 / 0.08));
+            }
+        }
+        .css-319lph-ValueContainer {
+            display: none;
+        }
+        .css-b62m3t-container {
+            position: absolute;
+            top: 60px;
+            right: 85px;
+            box-sizing: border-box;
+        }
+        .css-26l3qy-menu {
+            width: fit-content;
+        }
+    }
+
+    .container_content {
+        display: flex;
+
+
+        .left_portion {
+            width: 50%;
+            margin-left: 75px;
+
+            .inner_content_left {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                background-color: RGB(255 237 213);
+                gap: 10px;
+                border-radius: 9999px;
+                height: 40px;
+                width: fit-content;
+
+            p {
+                color: #ed8936;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+
+            .image_span {
+                object-fit: contain;
+                background-color: white;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                margin-right: 10px;
+            }
+
+            .delivery_img {
+                height: 35px;
+            }
+            }
+
+            .inner_header {
+
+                line-height: 4em;
+                h1 {
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                    letter-spacing: 0.15em;
+                    height: 8rem;
+
+                    .inner_left_heading {
+                        color: #ed8936;
+                        display: block;
+                    }
+                }
+            }
+
+            .inner_left_paragraph {
+                color: grey;
+                background-color: #f6f6f6;
+                line-height: 2.5em;
+
+            }
+
+            .inner_left_button {
+                
+                .order_button {
+                    color: #fff;
+                    background-color: #ed8936;
+                }
+            }
+        }
+
+        .right_portion {
+            margin-top: 1em;
+            margin-left: 5em;
+
+            .image_right {
+                height: 30em;
+                margin-left: 15em;
             }
         }
     }
