@@ -1,6 +1,6 @@
 .container {
     .navbar {
-        height: 90px;
+        height: 75px;
         width: 100%;
         box-shadow: 0 3px 12px RGB(22 22 22 / 5%);
         background-color: RGB(240 253 250);
@@ -94,7 +94,8 @@
 
     .container_content {
         display: flex;
-
+        box-shadow: 0 3px 12px RGB(22 22 22 / 5%);
+        background-color: #f6f6f6;
 
         .left_portion {
             width: 50%;
@@ -156,8 +157,9 @@
             .inner_left_button {
                 
                 .order_button {
-                    color: #fff;
+                    color: black;
                     background-color: #ed8936;
+                    margin-bottom: 1em;
                 }
             }
         }
@@ -168,7 +170,97 @@
 
             .image_right {
                 height: 30em;
-                margin-left: 15em;
+                margin-left: 8em;
+                width: 28em;
+            } 
+            .wrapper_overlay {
+                // display: flex;
+                // position: absolute;
+                // top: 100px;
+                // right: 120px;
+
+                .overlay_1 {
+                    position: absolute;
+                    top: 10em;
+                    right: 25em;
+                }
+                
+                .overlay_2 {
+                    position: absolute;
+                    top: 10em;
+                    right: 10em;
+                }
+
+            .overlay_blur {
+                cursor: pointer;
+                width: fit-content;
+                box-shadow: 0 0 1rem 0 RGB(0 0 0 / 20%);
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, .15);
+                backdrop-filter: blur(5px);
+                text-align: center;
+                height: 10em;
+
+                img {
+                    height: 7rem;
+                    width: 8rem;
+                }
+            }
+            }
+
+            .wrapper_overlay_2 {
+                // display: flex;
+                // position: absolute;
+                // top: 400px;
+                // right: 120px;
+
+                .overlay_3 {
+                    position: absolute;
+                    top: 24em;
+                    right: 25em;
+                }
+
+                .overlay_4 {
+                    position: absolute;
+                    top: 24em;
+                    right: 10em;
+                }
+
+                .overlay_blur {
+                    cursor: pointer;
+                    width: fit-content;
+                    box-shadow: 0 0 1rem 0 RGB(0 0 0 / 20%);
+                    border-radius: 5px;
+                    background-color: rgba(255, 255, 255, .15);
+                    backdrop-filter: blur(5px);
+                    text-align: center;
+                    height: 10em;
+
+                    img {
+                        height: 7rem;
+                        width: 8rem;
+                    }
+                }
+            }
+            
+            .dish_name {
+                font-family: ui-sans-serif;
+                font-weight: 800;
+                color: darkslategrey;
+            }
+        }
+    }
+
+    .container_content_2 {
+        box-shadow: 0 3px 12px RGB(22 22 22 / 5%);
+        background-color: RGB(240 253 250);
+
+        .container_inner_content_2 {
+            margin-left: 80px;
+
+            .inner_content_heading {
+                font-family: cursive;
+
             }
         }
     }
