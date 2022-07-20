@@ -2,6 +2,10 @@
   background: url('../../Images/background.jpg');
   background-size: cover;
   overflow: hidden;
+
+  .background_blur {
+    backdrop-filter: blur(3px);
+    }
     // @media only screen and (min-width: 300px) and (max-width: 900px){
   .form_box {
     width: 55%;
@@ -48,7 +52,11 @@
             .signin_button {
                 color: black;
                 background-color: #ed8936;
-                margin-left: 2rem;
+
+                .button_image {
+                    height: 2rem;
+                    width: 2rem;
+                }
             }
         }
     }

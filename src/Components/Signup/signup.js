@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from "@mui/material/Button";
 import "../Signup/signup.scss";
 import { Link, useNavigate } from "react-router-dom";
+import Delivery from "../../Images/delivery.png"
 
 export default function Signup() {
 
@@ -86,7 +87,7 @@ const errorMessage = () => {
 
 return (
 	<div className="signup_container">
-	    {/* Calling to the methods */}
+        <div className='background_blur'>
         <div className='form_box'> 
         <div className='form_content'>
         <div>
@@ -110,11 +111,12 @@ return (
                     value={confirmpassword} type="password" placeholder='Confirm Password' />
                 </div>
                 <div className='button_fields'>
-                    <Button onClick={handleSubmit} className="signin_button">Get Started</Button>
+                    <Button onClick={handleSubmit} className="signin_button" >Get Started <img src={Delivery} alt="delivery" className='button_image' /></Button>
                     <span>Already a User? 
                     <Link to="/login">Login</Link></span>
                 </div>
             </form>
+        </div>
         </div>
         </div>
 	</div>
