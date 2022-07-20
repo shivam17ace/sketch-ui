@@ -1,4 +1,4 @@
-.container {
+.signup_container {
   background: url('../../Images/background.jpg');
   background-size: cover;
   overflow: hidden;
@@ -15,11 +15,42 @@
         margin-left: 4rem;
         width: 50%;
         background-color: RGB(240 253 250);
-        height: 500px;
+        height: 31.25rem;
         text-align: center;
         border-radius: 1rem;
         box-shadow: 0px 2px 1px -1px RGB(0 0 0 / 20%),
         0px 1px 1px 0px RGB(0 0 0 / 14%), 0px 1px 3px 0px RGB(0 0 0 / 12%);
+
+        .form_heading {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .input_field_wrapper {
+            margin: 3rem 3rem;
+
+            .input_field {
+                width: 300px;
+                height: 30px;
+                border-radius: 15px;
+                text-align: center;
+            }
+        }
+
+        .button_fields {
+            display: flex;
+            align-content: flex-start;
+            justify-content: space-evenly;
+            padding: 0 2rem;
+            align-items: center;
+
+            .signin_button {
+                color: black;
+                background-color: #ed8936;
+                margin-left: 2rem;
+            }
+        }
     }
   }
 }

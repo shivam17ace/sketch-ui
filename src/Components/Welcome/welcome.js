@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Welcome/welcome.scss";
 import Logo from "../../Images/logo.png";
 import Avatar from "../../Images/avatar.png";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
-import Select from "react-select";
 import Delivery from "../../Images/delivery.png";
 import Button from "@mui/material/Button";
 import HeroBg from "../../Images/heroBg.png";
@@ -12,15 +11,15 @@ import I1 from "../../Images/i1.png";
 import C1 from "../../Images/c1.png";
 import F1 from "../../Images/f1.png";
 import R1 from "../../Images/r1.png";
+import { useNavigate } from "react-router-dom";
 
 function Welcome() {
-  const [isDropDownVisible, setIsDropDownVisible] = useState(false);
-
+    
+  let navigate = useNavigate(); 
   const toggleDropDown = () => {
-    const data = isDropDownVisible ? false : true;
-    setIsDropDownVisible(data);
-  };
-  const option = [{ label: "Logout", icon: "MdLogout" }];
+    let path = `login`; 
+    navigate(path);
+  }
 
   return (
     <div className="container">
@@ -42,11 +41,6 @@ function Welcome() {
         <div className="avatar_logo" onClick={toggleDropDown}>
           <motion.img whileTap={{ scale: 0.7 }} src={Avatar} alt="avatar" />
         </div>
-        {isDropDownVisible ? (
-          <span>
-            <Select options={option} defaultValue={""} />
-          </span>
-        ) : null}
       </div>
       <div className="container_content">
         <div className="left_portion">

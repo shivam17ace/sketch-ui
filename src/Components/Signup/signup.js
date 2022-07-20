@@ -3,16 +3,19 @@ import Button from "@mui/material/Button";
 import "../Signup/signup.scss";
 // import ChefP from "../../Images/chef1.png";
 // import ChefG from"../../Images/cheff.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
 
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
 const [password, setPassword] = useState('');
+const [confirmpassword, setConfirmPassword] = useState('');
 const [submitted, setSubmitted] = useState(false);
 const [error, setError] = useState(false);
 const [data, setData] = useState('');
+
+let navigate = useNavigate(); 
 
 // Handling the name change
 const handleName = (e) => {
@@ -31,16 +34,25 @@ const handlePassword = (e) => {
 	setPassword(e.target.value);
 	setSubmitted(false);
 };
+const handleConfirmPassword = (e) => {
+	setConfirmPassword(e.target.value);
+	setSubmitted(false);
+};
 
 // Handling the form submission
 const handleSubmit = (e) => {
 	e.preventDefault();
-	if (name === '' || email === '' || password === '') {
+	if (name === '' || email === '' || password === '' || confirmpassword === '') {
 	setError(true);
 	} else {
-            setData(e.target.value)
+            const dataarr=[];
+            dataarr.push(name,email,password,confirmpassword)
+            setData(dataarr);
+            console.log(dataarr)
+            console.log(data)
             setSubmitted(true);
             setError(false);
+            navigate("../login", { replace: true });
 	    }
 };
 
@@ -72,35 +84,36 @@ const errorMessage = () => {
 };
 
 return (
-	<div className="container">
+	<div className="signup_container">
 	    {/* Calling to the methods */}
         <div className='form_box'> 
         <div className='form_content'>
         <div>
-            <h1>Signup</h1>
+            <span className='form_heading'>Signup</span>
         </div> 
             <form>
-                <div>
-                    <label className="label">Name:</label>
-                    <input onChange={handleName} className="input"
-                    value={name} type="text" />
+                <div className='input_field_wrapper'>
+                    <input onChange={handleName} className="input_field"
+                    value={name} type="text" placeholder='Username' autoFocus/>
                 </div>
-                <div>
-                    <label className="label">Email:</label>
-                    <input onChange={handleEmail} className="input"
-                    value={email} type="email" />
+                <div className='input_field_wrapper'>
+                    <input onChange={handleEmail} className="input_field"
+                    value={email} type="email" placeholder='Email' />
                 </div>
-                <div>
-                    <label className="label">Password:</label>
-                    <input onChange={handlePassword} className="input"
-                    value={password} type="password" />
+                <div className='input_field_wrapper'>
+                    <input onChange={handlePassword} className="input_field"
+                    value={password} type="password" placeholder='Password' />
                 </div>
-                <Button onClick={handleSubmit} variant="outlined">Sign In</Button>
+                <div className='input_field_wrapper'>
+                    <input onChange={handleConfirmPassword} className="input_field"
+                    value={confirmpassword} type="password" placeholder='Confirm Password' />
+                </div>
+                <div className='button_fields'>
+                    <Button onClick={handleSubmit} className="signin_button">Get Started</Button>
+                    <span>Already a User? 
+                    <Link to="/login">Login</Link></span>
+                </div>
             </form>
-            <div>
-                Already a User? 
-                <Link to="/login">Login</Link>
-            </div>
         </div>
         </div>
 	</div>
