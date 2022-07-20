@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Welcome from "../Components/Welcome/welcome";
 import Login from "../Components/Login/login";
 import Signup from "../Components/Signup/signup";
+import Dashboard from "../Components/Dashboard/dashboard";
 import "../routes/routes.scss";
 import { AnimatePresence } from "framer-motion"
 function RouteF () {
@@ -19,6 +20,7 @@ function RouteF () {
                     <Route path="/" element={<Welcome />} />
                     <Route path="login" element={<Login />} />
                     <Route path="signup" element={<Signup />} />
+                    <Route path="dashboard" element={<Dashboard />} />
                 </Routes>
             </Suspense>
         </div>

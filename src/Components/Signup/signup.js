@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Button from "@mui/material/Button";
 import "../Signup/signup.scss";
-// import ChefP from "../../Images/chef1.png";
-// import ChefG from"../../Images/cheff.png";
 import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
@@ -19,41 +17,44 @@ let navigate = useNavigate();
 
 // Handling the name change
 const handleName = (e) => {
-	setName(e.target.value);
-	setSubmitted(false);
+        setName(e.target.value);
+        setSubmitted(false);
 };
 
 // Handling the email change
 const handleEmail = (e) => {
-	setEmail(e.target.value);
-	setSubmitted(false);
+        setEmail(e.target.value);
+        setSubmitted(false);
 };
 
 // Handling the password change
 const handlePassword = (e) => {
-	setPassword(e.target.value);
-	setSubmitted(false);
+        setPassword(e.target.value);
+        setSubmitted(false);
 };
 const handleConfirmPassword = (e) => {
-	setConfirmPassword(e.target.value);
-	setSubmitted(false);
+        setConfirmPassword(e.target.value);
+        setSubmitted(false);
 };
+
 
 // Handling the form submission
 const handleSubmit = (e) => {
 	e.preventDefault();
 	if (name === '' || email === '' || password === '' || confirmpassword === '') {
-	setError(true);
-	} else {
+        setError("Field Required")
+	// setError(true);
+	}
+     else {
             const dataarr=[];
             dataarr.push(name,email,password,confirmpassword)
             setData(dataarr);
             console.log(dataarr)
             console.log(data)
             setSubmitted(true);
-            setError(false);
+            // setError(false);
             navigate("../login", { replace: true });
-	    }
+        }
 };
 
 // Showing success message
