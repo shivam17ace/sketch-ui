@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import "../Topbar/Topbar.scss";
+import "../Topbar/media.scss";
 import Avatar from "../../../Images/avatar.png";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -27,7 +28,7 @@ function TopBar() {
       };
     return(
         <div className="navbar">
-             <div className="navbar_section">
+             <div className="navbar_section nav_pc_text">
                 <span className="navbar_text"> How We Works</span>
                 <img src={Line} alt="line" className="navbar_line" />
                 <span className="navbar_text">Who We Are</span>

@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import Button from "@mui/material/Button";
 import "../Login/login.scss";
 import { Link, useNavigate } from "react-router-dom";
-import Chef from "../../Images/chef1.png"
+import Chef from "../../Images/chef1.png";
+import "../Login/media.scss";
 
 function Login () {
     const [username, setUsername] = useState('');

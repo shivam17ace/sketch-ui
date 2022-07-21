@@ -27,7 +27,17 @@
             background-color: #f6f6f6;
 
             .left_portion {
-                margin-left: 2rem;
+                margin-left: 3rem;
+                .inner_header {
+                    width: 20rem;
+                    line-height: 3.5rem;
+                h1 {
+                    font-weight: 800;
+                    font-size: 2rem;
+                    letter-spacing: 0em;
+                    height: 7rem;
+                }
+                }
             }
 
             .right_portion {
@@ -37,8 +47,32 @@
                 .image_right {
                     height: 30em;
                     margin-left: 1rem;
-                    width: fit-content;
+                    width: 21.875rem;
                 } 
+                .wrapper_overlay {
+                    .overlay_1 {
+                       position: absolute;
+                       top: 70rem;
+                       right: 15rem;
+                   }
+                   .overlay_2 {
+                       position: absolute;
+                       top: 70rem;
+                       right: 4rem;
+                   }
+                }
+                .wrapper_overlay_2 {
+                    .overlay_3 {
+                        position: absolute;
+                        top: 82rem;
+                        right: 15rem;
+                    }
+                    .overlay_4 {
+                        position: absolute;
+                        top: 82rem;
+                        right: 4em;
+                    }
+                }
             }           
         }
     }
