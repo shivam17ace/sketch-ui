@@ -1,15 +1,15 @@
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import Welcome from "../Components/Welcome/welcome";
-import Login from "../Components/Login/login";
-import Signup from "../Components/Signup/signup";
-import Dashboard from "../Components/Dashboard/dashboard";
-import Menu from "../Components/Menu/Menu";
-import Orders from "../Components/Orders/Orders";
-import Profile from "../Components/Profile/Profile";
-import Setting from "../Components/Settings/Setting";
 import "../routes/routes.scss";
 import { AnimatePresence } from "framer-motion"
+const Welcome = React.lazy(() => import("../Components/Welcome/welcome"));
+const Login = React.lazy(() => import("../Components/Login/login"));
+const Signup = React.lazy(() => import("../Components/Signup/signup"));
+const Dashboard = React.lazy(() => import("../Components/Dashboard/dashboard"));
+const Menu = React.lazy(() => import("../Components/Menu/Menu"));
+const Orders = React.lazy(() => import("../Components/Orders/Orders"));
+const Profile = React.lazy(() => import("../Components/Profile/Profile"));
+const Setting = React.lazy(() => import("../Components/Settings/Setting"));
 function RouteF () {
 
     return(
