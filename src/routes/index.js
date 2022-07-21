@@ -4,6 +4,10 @@ import Welcome from "../Components/Welcome/welcome";
 import Login from "../Components/Login/login";
 import Signup from "../Components/Signup/signup";
 import Dashboard from "../Components/Dashboard/dashboard";
+import Menu from "../Components/Menu/Menu";
+import Orders from "../Components/Orders/Orders";
+import Profile from "../Components/Profile/Profile";
+import Setting from "../Components/Settings/Setting";
 import "../routes/routes.scss";
 import { AnimatePresence } from "framer-motion"
 function RouteF () {
@@ -21,6 +25,10 @@ function RouteF () {
                     <Route path="login" element={<Login />} />
                     <Route path="signup" element={<Signup />} />
                     <Route path="dashboard" element={<Dashboard />} />
+                    <Route path="menu" element={<Menu />} />
+                    <Route path="orders" element={<Orders />} />
+                    <Route path="profile" element={<Profile />} />
+                    <Route path="settings" element={<Setting />} />
                 </Routes>
             </Suspense>
         </div>
