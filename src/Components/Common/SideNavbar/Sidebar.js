@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import "../SideNavbar/Sidebar.scss";
 import {Link} from "react-router-dom";
-import { ProSidebar, Menu, MenuItem, SidebarHeader } from 'react-pro-sidebar';
+import { ProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
 import { FaList } from "react-icons/fa";
 import { FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiShoppingCart } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import {MdDashboard} from "react-icons/md";
+import Chef from "../../../Images/cheff.png";
 
 function SideBar() {
     const [menuCollapse, setMenuCollapse] = useState(false);
@@ -16,16 +17,19 @@ function SideBar() {
   };
     return(
         <div className="container_sidebar">
-            <ProSidebar collapsed={menuCollapse}>
-                <Menu iconShape="square">
+            <ProSidebar collapsed={menuCollapse} className="sidebar_data">
+                <Menu iconShape="square" className="sidebar_menu">
+                    <div className="sidebar_content_username"> 
                     <div className="closemenu" onClick={menuIconClick}>
                         {menuCollapse ? (
                             <FiArrowRightCircle/>
-                        ) : (
-                            <FiArrowLeftCircle/>
-                        )}
+                        ) : ( 
+                                <div className="collapse_button">
+                                <MenuItem><img src={Chef} alt="chef" className="user_image" ></img></MenuItem>   
+                                <FiArrowLeftCircle/>
+                                </div>
+                            )}
                     </div>
-                    <div className="sidebar_content_username">
                         <MenuItem>UserName</MenuItem>
                     </div>
                     <div className="sidebar_content">
