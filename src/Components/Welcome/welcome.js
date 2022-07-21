@@ -11,7 +11,7 @@ import I1 from "../../Images/i1.png";
 import C1 from "../../Images/c1.png";
 import F1 from "../../Images/f1.png";
 import R1 from "../../Images/r1.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Welcome() {
     
@@ -30,9 +30,9 @@ function Welcome() {
         </div>
         <ul>
           <motion.li whileTap={{ scale: 0.8 }}>Home</motion.li>
-          <motion.li whileTap={{ scale: 0.8 }}>Menu</motion.li>
-          <motion.li whileTap={{ scale: 0.8 }}>About Us</motion.li>
-          <motion.li whileTap={{ scale: 0.8 }}>Service</motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/menu" className="nav_links">Menu</Link></motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/about" className="nav_links">About Us</Link></motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/service" className="nav_links">Service</Link></motion.li>
         </ul>
         <motion.span whileTap={{ scale: 0.7 }} className="icon-shopping">
           <MdShoppingBasket />
