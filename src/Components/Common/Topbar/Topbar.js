@@ -8,7 +8,6 @@ import Line from "../../../Images/Blue Line.svg";
 import {useNavigate} from "react-router-dom";
 import {
     ButtonDropdown,
-    DropdownToggle,
     DropdownMenu,
     DropdownItem,
   } from "reactstrap";
@@ -20,8 +19,7 @@ function TopBar() {
 
     const handleLogout = () =>{
         
-        console.log("jey")
-        navigate("../login", { replace: true });
+        navigate("/", { replace: true });
     }
     const toggleDropDown = () => {
         const data = isDropDownVisible ? false : true;

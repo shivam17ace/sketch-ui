@@ -1,0 +1,45 @@
+@media screen and (max-width: 420px){
+
+    .container {
+        .navbar {
+            ul {
+                display: none;
+            }
+            .icon-shopping {
+                margin-right: 1.2rem;
+                display: flex;
+                margin-left: 12.5rem;
+                cursor: pointer;
+                color: grey;
+                align-items: center;
+            }
+            .avatar_logo img {
+                cursor: pointer;
+                width: 30px;
+                object-fit: cover;
+                margin-right: 0.1rem; 
+                filter: drop-shadow(0 20px 13px RGB(0 0 0/0.03)) drop-shadow(0 8px 5px RGB(0 0 0/0.08));
+            }
+        }
+        .container_content {
+            display: inline-block;
+            box-shadow: 0 3px 12px RGB(22 22 22/5%);
+            background-color: #f6f6f6;
+
+            .left_portion {
+                margin-left: 2rem;
+            }
+
+            .right_portion {
+                margin-top: 1em;
+                margin-left: 1rem;
+            
+                .image_right {
+                    height: 30em;
+                    margin-left: 1rem;
+                    width: fit-content;
+                } 
+            }           
+        }
+    }
+}

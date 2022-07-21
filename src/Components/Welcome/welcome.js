@@ -1,5 +1,6 @@
 import React from "react";
 import "../Welcome/welcome.scss";
+import "../Welcome/media.scss";
 import Logo from "../../Images/logo.png";
 import Avatar from "../../Images/avatar.png";
 import { MdShoppingBasket } from "react-icons/md";
@@ -42,8 +43,8 @@ function Welcome() {
           <motion.img whileTap={{ scale: 0.7 }} src={Avatar} alt="avatar" />
         </div>
       </div>
-      <div className="container_content">
-        <div className="left_portion">
+      <div className="row container_content">
+        <div className="col left_portion sm-12">
           <div className="inner_content_left">
             <p>Bike Delivery</p>
             <span className="image_span">
@@ -73,7 +74,7 @@ function Welcome() {
             </Button>
           </motion.div>
         </div>
-        <div className="right_portion">
+        <div className="col right_portion sm-12">
           <img src={HeroBg} alt="herobackground" className="image_right" />
           <div className="wrapper_overlay">
             <div className="overlay_1 overlay_blur">

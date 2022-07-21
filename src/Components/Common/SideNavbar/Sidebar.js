@@ -23,14 +23,15 @@ function SideBar() {
                     <div className="closemenu" onClick={menuIconClick}>
                         {menuCollapse ? (
                             <FiArrowRightCircle/>
-                        ) : ( 
-                                <div className="collapse_button">
-                                <MenuItem><img src={Chef} alt="chef" className="user_image" ></img></MenuItem>   
-                                <FiArrowLeftCircle/>
-                                </div>
+                        ) : (   <>
+                                    <div className="collapse_button">
+                                    <MenuItem><img src={Chef} alt="chef" className="user_image" ></img></MenuItem>   
+                                    <FiArrowLeftCircle/>
+                                    </div>
+                                    <MenuItem>UserName</MenuItem>
+                                </>
                             )}
                     </div>
-                        <MenuItem>UserName</MenuItem>
                     </div>
                     <div className="sidebar_content">
                         <MenuItem icon={<MdDashboard />}>Dashboard<Link to="/dashboard" /></MenuItem>
