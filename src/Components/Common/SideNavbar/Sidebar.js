@@ -7,7 +7,7 @@ import { FiLogOut, FiArrowLeftCircle, FiArrowRightCircle, FiShoppingCart } from 
 import { RiPencilLine } from "react-icons/ri";
 import { BiCog } from "react-icons/bi";
 import {MdDashboard} from "react-icons/md";
-import Chef from "../../../Images/cheff.png";
+import Artist from "../../../Images/artist.png";
 
 function SideBar() {
     const [menuCollapse, setMenuCollapse] = useState(false);
@@ -25,7 +25,7 @@ function SideBar() {
                             <FiArrowRightCircle/>
                         ) : (   <>
                                     <div className="collapse_button">
-                                    <MenuItem><img src={Chef} alt="chef" className="user_image" ></img></MenuItem>   
+                                    <MenuItem><img src={Artist} alt="chef" className="user_image" ></img></MenuItem>   
                                     <FiArrowLeftCircle/>
                                     </div>
                                     <MenuItem>UserName</MenuItem>
@@ -37,7 +37,7 @@ function SideBar() {
                         <MenuItem icon={<MdDashboard />}>Dashboard<Link to="/dashboard" /></MenuItem>
                     </div>
                     <div className="sidebar_content">
-                        <MenuItem icon={<FaList />}>Menu<Link to="/menu" /></MenuItem>
+                        <MenuItem icon={<FaList />}>Order Portal<Link to="/menu" /></MenuItem>
                     </div>
                     <div className="sidebar_content">
                         <MenuItem icon={<FiShoppingCart />}>My Orders<Link to="/orders" /></MenuItem>

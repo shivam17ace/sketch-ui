@@ -1,17 +1,17 @@
 import React from "react";
 import "../Welcome/welcome.scss";
 import "../Welcome/media.scss";
-import Logo from "../../Images/logo.png";
+import Artist from "../../Images/artist.png";
 import Avatar from "../../Images/avatar.png";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
 import Delivery from "../../Images/delivery.png";
 import Button from "@mui/material/Button";
 import HeroBg from "../../Images/heroBg.png";
-import I1 from "../../Images/i1.png";
-import C1 from "../../Images/c1.png";
-import F1 from "../../Images/f1.png";
-import R1 from "../../Images/r1.png";
+import Sketch1 from "../../Images/sketch1.jpg";
+import Sketch2 from "../../Images/sketch2.png";
+import Sketch3 from "../../Images/sketch3.png";
+import Sketch4 from "../../Images/sketch4.png";
 import { useNavigate, Link } from "react-router-dom";
 
 function Welcome() {
@@ -26,8 +26,8 @@ function Welcome() {
     <div className="container">
       <div className="navbar">
         <div className="logo">
-          <img src={Logo} alt="logo" />
-          <span>City</span>
+          <img src={Artist} alt="logo" />
+          <span>Sketchers</span>
         </div>
         <ul>
           <motion.li whileTap={{ scale: 0.8 }}>Home</motion.li>
@@ -46,7 +46,7 @@ function Welcome() {
       <div className="container_content">
         <div className="left_portion">
           <div className="inner_content_left">
-            <p>Bike Delivery</p>
+            <p>Sketch Delivery</p>
             <span className="image_span">
               <img src={Delivery} alt="bikelogo" className="delivery_img" />
             </span>
@@ -78,22 +78,18 @@ function Welcome() {
           <img src={HeroBg} alt="herobackground" className="image_right" />
           <div className="wrapper_overlay">
             <div className="overlay_1 overlay_blur">
-              <img src={I1} alt="icecream" />
-              <p className="dish_name">IceCream</p>
+              <img src={Sketch3} alt="sketch1" />
             </div>
             <div className="overlay_2 overlay_blur">
-              <img src={R1} alt="rice" />
-              <p className="dish_name">Rice</p>
+              <img src={Sketch2} alt="sketch2" />
             </div>
           </div>
           <div className="wrapper_overlay_2">
             <div className="overlay_blur overlay_3">
-              <img src={C1} alt="chicken" />
-              <p className="dish_name">Chicken</p>
+              <img src={Sketch4} alt="sketch4" />
             </div>
             <div className="overlay_blur overlay_4">
-              <img src={F1} alt="fruit" />
-              <p className="dish_name">Fruits</p>
+              <img src={Sketch3} alt="sketch3" />
             </div>
           </div>
         </div>
@@ -101,7 +97,7 @@ function Welcome() {
       <div className="container_content_2">
         <div className="container_inner_content_2">
           <div className="inner_content_heading">
-            <h3>Our Healthy & Fresh Fruits</h3>
+            <h3>Our Recent Delivered Sketches</h3>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import "../Topbar/media.scss";
 import Avatar from "../../../Images/avatar.png";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
-import Logo from "../../../Images/logo.png";
+import Logo from "../../../Images/art_logo_2.jpg";
 import Line from "../../../Images/Blue Line.svg";
 import {useNavigate} from "react-router-dom";
 import {
@@ -36,7 +36,7 @@ function TopBar() {
             <div className="navbar_section">
                 <div className="logo">
                     <img src={Logo} alt="logo" />
-                    <span className="logo_text">City</span>
+                    <span className="logo_text">Sketchers</span>
                 </div>
             </div>
             <div className="navbar_section_last">

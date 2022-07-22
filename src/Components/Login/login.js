@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Button from "@mui/material/Button";
 import "../Login/login.scss";
 import { Link, useNavigate } from "react-router-dom";
-import Chef from "../../Images/chef1.png";
+import Logo from "../../Images/art_logo.png";
 import "../Login/media.scss";
 
 function Login () {
@@ -49,7 +49,7 @@ const handleSubmit = (e) =>{
                     value={password} type="password" placeholder='Password' />
                 </div>
                 <div className='button_fields'>
-                    <Button onClick={handleSubmit} className="signin_button">Login<img src={Chef} alt="chef" className="button_image" /></Button>
+                    <Button onClick={handleSubmit} className="signin_button">Login<img src={Logo} alt="chef" className="button_image" /></Button>
                     <span>New  User? 
                     <Link to="/signup">Signup</Link></span>
                 </div>
