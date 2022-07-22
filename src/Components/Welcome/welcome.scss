@@ -163,9 +163,12 @@
             .inner_left_button {
                 
                 .order_button {
-                    color: black;
                     background-color: #ed8936;
                     margin-bottom: 1em;
+                    .order_link {
+                    color: black;
+                    text-decoration: none;
+                    }
                 }
             }
         }

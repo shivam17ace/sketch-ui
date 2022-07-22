@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import Delivery from "../../Images/delivery.png";
 import Button from "@mui/material/Button";
 import HeroBg from "../../Images/heroBg.png";
-import Sketch1 from "../../Images/sketch1.jpg";
 import Sketch2 from "../../Images/sketch2.png";
 import Sketch3 from "../../Images/sketch3.png";
 import Sketch4 from "../../Images/sketch4.png";
@@ -31,7 +30,9 @@ function Welcome() {
         </div>
         <ul>
           <motion.li whileTap={{ scale: 0.8 }}>Home</motion.li>
-          <motion.li whileTap={{ scale: 0.8 }}><Link to="/menu" className="nav_links">Menu</Link></motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/createorder" className="nav_links">Order Sketch</Link></motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/gallery" className="nav_links">Gallery</Link></motion.li>
+          <motion.li whileTap={{ scale: 0.8 }}><Link to="/shop" className="nav_links">Shop</Link></motion.li>
           <motion.li whileTap={{ scale: 0.8 }}><Link to="/about" className="nav_links">About Us</Link></motion.li>
           <motion.li whileTap={{ scale: 0.8 }}><Link to="/service" className="nav_links">Service</Link></motion.li>
         </ul>
@@ -68,9 +69,9 @@ function Welcome() {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <motion.div whileTap={{ scale: 0.9 }} className="inner_left_button">
+          <motion.div className="inner_left_button">
             <Button variant="contained" className="order_button">
-              Order Now
+              <Link to="/createorder" className="order_link">Order Now</Link>
             </Button>
           </motion.div>
         </div>

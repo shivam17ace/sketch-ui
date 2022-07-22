@@ -10,6 +10,7 @@ const Menu = React.lazy(() => import("../Components/Menu/Menu"));
 const Orders = React.lazy(() => import("../Components/Orders/Orders"));
 const Profile = React.lazy(() => import("../Components/Profile/Profile"));
 const Setting = React.lazy(() => import("../Components/Settings/Setting"));
+const CreateOrder = React.lazy(() => import("../Components/CreateOrder/createOdrer"));
 function RouteF () {
 
     return(
@@ -29,6 +30,7 @@ function RouteF () {
                     <Route path="orders" element={<Orders />} />
                     <Route path="profile" element={<Profile />} />
                     <Route path="settings" element={<Setting />} />
+                    <Route path="createorder" element={<CreateOrder />} />
                 </Routes>
             </Suspense>
         </div>
