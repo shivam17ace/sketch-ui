@@ -1,0 +1,25 @@
+.content {
+    .listing {
+        // width: inherit;
+        display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        height: auto;
+
+        .tabs_data {
+            width: -webkit-fill-available;
+
+            .listTab {
+                text-align: center;
+            }
+            .tabs {
+                padding: 1rem 3rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+                border-bottom: 1px solid transparent;
+                cursor: pointer;
+            }
+        }
+    }
+}
