@@ -1,0 +1,131 @@
+.delivery_content {
+    display: flex;
+
+    .left_portion {
+        width: 70%;
+        border-right: 2px groove #ffffff;
+        padding: 2rem 10rem;
+        height: 78vh;
+        .heading_left {
+            padding: 2rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #3f3f3f;;
+        }
+
+        .form_adress {
+            padding-left: 2rem;
+
+            .receipent_detail {
+                .receipent_detail_input {
+                    margin-right: 2rem;
+                    width: 22.5rem;
+                    height: 1.5rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    border-color: lightgray;
+                }
+            }
+
+            .adress_detail {
+                margin-top: 1rem;
+
+                .adress_detail_input {
+                    width: 47.5rem;
+                    height: 3rem;
+                    text-align: center;
+                    border-radius: 5px;
+                    border-color: lightgray;
+                }
+            }
+
+            .receipent_address {
+                margin-top: 1rem;
+
+                .receipent_address_input {
+                    margin-right: 2rem;
+                    width: 22.5rem;
+                    height: 1.5rem;
+                    text-align: center;
+                    margin-top: 1rem;
+                    border-radius: 5px;
+                    border-color: lightgray;
+                }
+            }
+        }
+
+        .deliver_button {
+            margin: 2rem 2rem;
+            width: -webkit-fill-available;
+            background-color: #ed9336;
+            color: black;
+        }
+    }
+
+    .right_portion {
+        width: 30%;
+        margin-top: 5rem;
+
+        .order_heading {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #3f3f3f;
+            padding-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        .order_charges {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 2rem;
+
+            .order_content {
+                
+            }
+
+            .order_content_2 {
+                font-size: 1.05rem;
+                margin-left: 5rem;
+            }
+        }
+        .right_portion_2{
+            margin-top: 3rem;
+
+            .delivery_heading { 
+                font-size: 1.2rem;
+                font-weight: 700;
+                color: #3f3f3f;
+                margin-left: 2rem;
+            }
+            
+            .delivery_charges {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 3rem;
+
+                .delivery_content {
+                    color: grey;
+                    font-size: 1.05rem;
+                }
+
+                .delivery_content_2 {
+                    font-size: 1.05rem;
+                    margin-left: 5rem;
+                }
+            } 
+
+            .order_button {
+                padding: 0 3rem;
+                .button_content {
+                    width: -webkit-fill-available;
+                    background-color: #ed9336;
+                    .order_link {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

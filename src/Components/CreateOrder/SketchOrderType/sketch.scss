@@ -1,5 +1,4 @@
 .tab_content {
-    
     display: flex;
     .top_part {
         width: fit-content;
@@ -31,7 +30,16 @@
             display: flex;
             flex-direction: column;
             padding-top: 1rem;
-            padding-left: 8rem;
+            padding-left: 7rem;
+
+            .detail_css {
+                font-weight: 700;
+
+                .detail_req_css {
+                    width: -webkit-fill-available;
+                    padding-left: 2rem;
+                }
+            }
         }
     }
     .select_req {
@@ -44,8 +52,8 @@
         .client_select {
             height: 1.8rem;
             border-radius: 5px;
-            border-color: chocolate;
             margin: 0.4rem 0;
+            border-color: lightblue;
         }
         
         .select_image {
@@ -71,7 +79,7 @@
         padding-top: 5rem;
 
         .order_button {
-            background-color: #ed8936;
+            background-color:blanchedalmond;
             color: black;
         }
     }

@@ -22,4 +22,8 @@
             }
         }
     }
+    
+    .rwt__tablist:not([aria-orientation="vertical"]) {
+        border-bottom: 0px solid #ddd; 
+    }
 }

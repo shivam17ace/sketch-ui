@@ -15,20 +15,20 @@ function PencilSketch() {
                         </div>
                     </div>
                     <div className="sketch_detail">
-                        <div>
-                            Size:  A4(8X12 inch), A3(12X16 inch), A2(16X24 inch)
+                        <div className="detail_css">
+                            Size:  <span className="detail_req_css">A4(8X12 inch), A3(12X16 inch), A2(16X24 inch)</span>
                         </div>
-                        <div>
-                            Medium:  Pencil Sketch
+                        <div className="detail_css">
+                            Medium:  <span className="detail_req_css">Pencil Sketch</span>
                         </div>
-                        <div>
-                            Shipping:  Dehradun Only
+                        <div className="detail_css">
+                            Shipping:  <span className="detail_req_css">Dehradun Only</span>
                         </div>
-                        <div>
-                            Framing: Framed and unframed
+                        <div className="detail_css">
+                            Framing: <span className="detail_req_css">Framed and unframed</span>
                         </div>
-                        <div>
-                            Style: face to shoulder, not full body
+                        <div className="detail_css">
+                            Style: <span className="detail_req_css">Face to shoulder, Not full body</span>
                         </div>
                     </div>
                 </div>
